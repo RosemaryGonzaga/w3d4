@@ -76,5 +76,10 @@
 
 
 
+
+
+
+
 # misc commands
 * `ls -a`
+* later: google bash git branch

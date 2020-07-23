@@ -44,24 +44,18 @@
 # adding files
 * `git status`
 * `git add <file>` - move changes from working directory to staging area
-* `git add -A` 
-* `git add .` 
+* `git add -A` - stages ALL changes in entire working directory (combines `git add .` and `git add -u`)
+* `git add .` - stages ALL changes in current directory (and nested ones)
+* `git add -u` - only stages modifications to already tracked files
+    - "Untracked" refers to new file that hasn't yet been committed
+    - "modified" indicates changes made to a file that has already been prev committed
 * `git diff` 
 
 # committing files
 * `git commit -m "<message>"`
+    - commit messages are required
+    - describe the change you made (e.g., "Edit button feature")
 * `git log`
-
-# misc commands
-* `ls -a`
-
-
-
-
-
-
-
-
 
 # branching
 * `git branch` 
@@ -79,3 +73,8 @@
 * `git push -u <alias_for_remote_repo> <branch_name>` 
 * `git push -u <alias_for_remote_repo> <branch_name>` 
 * `git clone <remote_repo_url>` 
+
+
+
+# misc commands
+* `ls -a`
